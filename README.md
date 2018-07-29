@@ -3,7 +3,6 @@
 <img src="./screenshots/phone1.png" width="40%" height="40%" />
 <img src="./screenshots/phone2.png" width="40%" height="40%" />
 <img src="./screenshots/phone3.png" width="40%" height="40%" />
-<img src="./screenshots/phone4.png" width="40%" height="40%" />
 <img src="./screenshots/phone5.png" width="40%" height="40%" />
 <img src="./screenshots/phoneTest.gif" width="40%" height="40%" />
 **PC**
