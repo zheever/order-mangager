@@ -1,3 +1,4 @@
+本项目主要用于学习 react + redux 之间的配合方式,scss的使用，rem和flex的自适应实现
 ## 屏幕截图
 <img src="./screenshots/phone1.png" width="40%" height="40%" />
 <img src="./screenshots/phone2.png" width="40%" height="40%" />
