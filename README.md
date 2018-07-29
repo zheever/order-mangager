@@ -1,4 +1,17 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+## 屏幕截图
+<img src="./screenshots/phone1.png" width="40%" height="40%" />
+<img src="./screenshots/phone2.png" width="40%" height="40%" />
+<img src="./screenshots/phone3.png" width="40%" height="40%" />
+<img src="./screenshots/phone4.png" width="40%" height="40%" />
+<img src="./screenshots/phone5.png" width="40%" height="40%" />
+<img src="./screenshots/phoneTest.gif" width="40%" height="40%" />
+**PC**
+<img src="./screenshots/pc1.png" />
+<img src="./screenshots/pc2.png" />
+<img src="./screenshots/pc3.png" />
+<img src="./screenshots/pcTest.gif" />
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
