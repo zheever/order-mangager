@@ -35,9 +35,8 @@ class Home extends Component {
         break;
       default:;
     }
-    if(type && value) {
+    if(type) {
       this.saveFromData(value, type)
-      event.target.value = value 
     }
   }
 
@@ -47,6 +46,7 @@ class Home extends Component {
    */
   saveFromData = (value, type) => {
     this.props.onInputClick(value, type)
+    console.log(value)
     /* let Data = Object.assign(this.state.formData, obj)
     this.props.saveFromData(obj.value, obj.t)
     this.setState({
@@ -69,7 +69,6 @@ class Home extends Component {
   }
 
   componentWillReceiveProps(nextProps){
-    console.log('home')
     if(!is(fromJS(this.props.proData), fromJS(nextProps.proData))){
       this.initData(nextProps);
     }
@@ -92,15 +91,15 @@ class Home extends Component {
         <form onChange={this.handleInput.bind(this)}>
           <div className='home-form-item'>
             <span>销售金额</span>
-            <input id='orderSum' className='home-form-input' type='text' placeholder='请输入订单金额' value={this.props.formData.orderNum} />
+            <input id='orderSum' className='home-form-input' type='text' placeholder='请输入订单金额' value={this.props.formData.orderSum} />
           </div>
           <div className='home-form-item'>
             <span>客户姓名</span>
-            <input id='name' className='home-form-input' type='text' placeholder='请输入客户姓名' value={this.props.formData.orderNum} />
+            <input id='name' className='home-form-input' type='text' placeholder='请输入客户姓名' value={this.props.formData.name} />
           </div>
           <div className='home-form-item'>
             <span>客户电话</span>
-            <input id='phoneNumber' className='home-form-input' maxLength='13' type='text' placeholder='请输入客户电话' value={this.props.formData.orderNum} />
+            <input id='phoneNo' className='home-form-input' maxLength='13' type='text' placeholder='请输入客户电话' value={this.props.formData.phoneNo} />
           </div>
           <div className='home-form-item home-form-item-oneline'>
             <div className='item-title'>请选择销售的产品</div>
