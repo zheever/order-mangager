@@ -1,0 +1,61 @@
+@import "../../style/mixin.scss";
+@import "../../assets/iconfonts/iconfont.css";
+
+.header-container {
+  background-color: $header-color;
+  position: relative;
+  @include wh(100%, 50px);
+  text-align: center;
+  line-height: 50px;
+  @include font(0.6rem, white);
+  @include flex;
+  .header-slide-icon{
+    @include font(20px, #fff);
+    @include positionLeft;
+  }
+  .nav-slide-list{
+    @include coverScreen(fixed);
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    .nav-link{
+      @include font(0.4rem);
+      border-bottom: 1Px solid #ddd; 
+      margin: 0 $common-wd;
+      padding: 6px;
+      text-align: left;
+      position: relative;
+      &:before{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        color: #666;
+      };
+    }
+  }
+  .nav-enter{
+    transform: translate3d(-100%, 0, 0);
+  }
+  .nav-enter{
+    transform: translate3d(-100%, 0, 0);
+  }
+  .nav-enter.nav-enter-active{
+    transform: translate3d(0, 0, 0);
+    transition: transform 300ms;
+  }
+  .nav-leave{
+    transform: translate3d(0, 0, 0);
+  }
+  .nav-leave.nav-leave-active{
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 300ms;
+  }
+  .header-link {
+    @include font(0.5rem, white);
+    @include positionRight;
+  }
+  span, a {
+    display: inline-block;
+  }
+}

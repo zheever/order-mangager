@@ -1,0 +1,49 @@
+@import "../../style/mixin.scss";
+
+.common-con-top {
+    margin: 0;
+    .pro-list-con {
+        .pro-list-ul {
+            background-color: #fff;
+            .pro-item {
+                min-height: 2rempx;
+                width: 100%;
+                padding: $common-wd;
+                box-sizing: border-box;
+                border-bottom: 1PX solid #eee;
+                @include flex(space-between);
+                .pro-item-select{
+                    @include flex;
+                    .pro-select-status{
+                        @include font(0.7rem, #ccc);
+                    }
+                    .pro-selected{
+                        color: #666;
+                    }
+                    .pro-name{
+                        @include font(0.4rem);
+                        margin-left: 12px;
+                    }
+                  }
+                  .pro-item-edit{
+                    @include flex;
+                    .icon-jian{
+                        @include font(0.6rem, #eee);
+                    }
+                    .pro-num{
+                        @include font(0.4rem);
+                        text-align: center;
+                        min-width: 60px;
+                        line-height: 0.4rem;
+                    }
+                    .icon-jia{
+                        @include font(0.6rem, #ccc);
+                    }
+                    .edit-active{
+                      color: #ccc;
+                    }
+                  }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "../../style/mixin.scss";
+@import "../../assets/iconfonts/iconfont.css";
+
+.help-text-container {
+    @include flex;
+    flex-direction: column;
+    padding-top: 30px;
+    @include font(0.4rem);
+    .help-text {
+        width: 250px;
+    }
+    .dependencies {
+        width: 250px;
+        margin-top: 20px;
+    }
+}
